@@ -15,6 +15,11 @@ function slideshowNext() {
 
     slideIndex += 1; // slideIndex = slideIndex + 1;
 
+    // als einde, dan slideIndex = 0
+    if(slideIndex == slides.length) {
+        slideIndex = 0;
+    }
+    
     // volgende slide zichtbaar maken
     slides[slideIndex].classList.add('visible');
 }
