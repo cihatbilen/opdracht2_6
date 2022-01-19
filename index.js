@@ -1,16 +1,17 @@
 window.addEventListener('load', slideshowSetup);
 
 let slideIndex = 0;
+let slides;
 
 function slideshowSetup() {
     document.getElementById('slideshow-next').addEventListener('click', slideshowNext);
     document.getElementById('slideshow-prev').addEventListener('click', slideshowPrevious);
+    
+    // slides is een array van 5 HTML elementen.
+    slides = document.getElementsByClassName('slide');
 }
 
 function slideshowNext() {
-    // slides is een array van 5 HTML elementen.
-    let slides = document.getElementsByClassName('slide');
-
     // zichtbare slide verbergen
     slides[slideIndex].classList.remove('visible');
 
@@ -26,9 +27,6 @@ function slideshowNext() {
 }
 
 function slideshowPrevious() {
-    // slides is een array van 5 HTML elementen.
-    let slides = document.getElementsByClassName('slide');
-
     // zichtbare slide verbergen
     slides[slideIndex].classList.remove('visible');
 
