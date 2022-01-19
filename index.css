@@ -34,7 +34,7 @@
     background: rgba(0,0,0, .25);
     border-radius: 2px;
     opacity: 0;
-    transition: opacity 1.2s;
+    transition: opacity 3.2s;
     line-height: 1.5;
 }
 
@@ -45,7 +45,7 @@
 
 #slideshow .slide img {
     opacity: 0;
-    transition: opacity 1.2s;
+    transition: opacity 3.2s;
     backface-visibility: hidden;
     
 }
