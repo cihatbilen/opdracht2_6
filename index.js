@@ -1,6 +1,17 @@
 
-window.addEventListener("load", slideshowSetup)
+window.addEventListener("load", slideshowSetup);
 
-function{
-document.getElementById('slideshow-next').addEventListener("click", slideshowNext)
+  let slideindex= 0;
+
+
+function slideshowSetup(){
+document.getElementById('slideshow-next').addEventListener("click", slideshowNext);
+
+
+function slideshowNext(){
+  let slides = document.getElementsByClassName("slides");
+
+  slideindex= ++;
+
+
 }
